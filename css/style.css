@@ -1,0 +1,130 @@
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0A0C1B;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  padding: 60px 0;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lanterna-icon {
+  color: #0A0C1B;
+  width: 230px;
+  height: 150px;
+  background: url('../img/lanterna-desligada.png') no-repeat;
+}
+
+.ativo .lanterna-icon {
+  color: #FFF;
+  background: url('../img/lanterna-ligada.png') no-repeat;
+}
+
+.lanterna .status {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #78798B;
+}
+
+.btn-ligar {
+  display: block;
+  width: 150px;
+  height: 166px;
+  cursor: pointer;
+  background: url('../img/btn-desligado.svg') no-repeat;
+}
+
+.ativo .btn-ligar {
+  background: url('../img/btn-ligado.svg') no-repeat;
+}
+
+.bateria {
+  margin-top: 15px;
+}
+
+.bateria p {
+  font-size: 4rem;
+  font-weight: 300; 
+}
+
+.bateria p::after {
+  content: '';
+  display: inline-block;
+  width:  70px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.bateria100::after {
+  background: url('../img/bateria100-desligado.svg') no-repeat;
+}
+.bateria75::after {
+  background: url('../img/bateria75-desligado.svg')  no-repeat;
+}
+.bateria25::after {
+  background: url('../img/bateria25-desligado.svg') no-repeat;
+}
+.bateria0::after {
+  background: url('../img/bateria0-desligado.svg') no-repeat;
+}
+
+.bateria a {
+  display: block;
+  margin: 10px auto;
+  color: #287EB2;
+  border: 2px solid #287EB2;
+  border-radius: 10px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.bateria a:hover {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.ativo {
+  background: #FFF;
+  color: #0A0C1B;
+}
+
+
+.ativo .bateria100::after {
+  background: url('../img/bateria100.svg') no-repeat;
+}
+.ativo .bateria75::after {
+  background: url('../img/bateria75.svg')  no-repeat;
+}
+.ativo .bateria50::after {
+  background: url('../img/bateria50.svg')  no-repeat;
+}
+.ativo .bateria25::after {
+  background: url('../img/bateria25.svg') no-repeat;
+}
+.ativo .bateria0::after {
+  background: url('../img/bateria0.svg') no-repeat;
+}
+
+.ativo .bateria a {
+  color: #0A0C1B;
+  border-color: #0A0C1B;
+}
+
+.ativo .bateria a:hover {
+  color: #287EB2;
+  border-color: #287EB2;
+}
+
